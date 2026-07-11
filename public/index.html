@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>URL Shortener</h1>
+    <p class="subtitle">Paste a long link, get a short one.</p>
+
+    <form id="shorten-form">
+      <input
+        type="text"
+        id="long-url"
+        placeholder="https://example.com/some/very/long/path"
+        required
+      />
+      <button type="submit">Shorten</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <span id="short-url-text"></span>
+      <button id="copy-btn">Copy</button>
+    </div>
+
+    <p id="error-text" class="error hidden"></p>
+
+    <div id="stats" class="stats hidden">
+      Clicks so far: <span id="click-count">0</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
