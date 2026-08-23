@@ -18,14 +18,12 @@ url-shortener/
 │   └── urlRoutes.js       # Express route definitions
 ├── utils/
 │   └── base62.js          # Base62 encoding helper
-├── public/                # Frontend (served statically)
+├── public/                # Frontend
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
-├── sql/
-│   └── schema.sql         # Run this in MySQL Workbench first
 ├── server.js               # App entry point
-├── .env.example
+├── .env
 └── package.json
 ```
 
